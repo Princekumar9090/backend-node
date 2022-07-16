@@ -1,16 +1,26 @@
 {
-  "name": "my_first_backend",
+  "name": "back-end",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start" : "nodemon index.js",
+    "goLive": "ngrok http --host-header=rewrite 8080"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Princekumar9090/backend-node.git"
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Princekumar9090/backend-node/issues"
+  },
+  "homepage": "https://github.com/Princekumar9090/backend-node#readme",
   "dependencies": {
-    "bootstrap": "^5.2.0-beta1",
     "cors": "^2.8.5",
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
   }
 }
