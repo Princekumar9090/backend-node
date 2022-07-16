@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <style>
+      .sidemenu {
+        width: 200px;
+        height: 600px;
+        background-color: aquamarine;
+        position: relative;
+        overflow-y: hidden;
+      }
+
+      .subsidemenu {
+        width: 200px;
+        height: 600px;
+        background-color: rgb(221, 255, 127);
+        position: absolute;
+        top: 0;
+        transform: translateX(100%);
+        transition: transform 2s ease-in-out;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <div id="app">
+      <div class="sidemenu">
+        sidemenu
+        <button onclick="submenu();"><<</button>
+        <div class="subsidemenu" id="subsidemenuId">
+          <button onclick="backbtn();">>></button>
+
+          subbox
+        </div>
+      </div>
+    </div>
+ 
+   #1. function(){ // regular function
+
+    }
+  
+   #2. const dd = () =>  { // fat arrow functions
+
+    }
+
+    <h1 id="oscare">Oscare</h1> -->
+    FORM<br />
+    <input name="firstName" placeholder="Enter First name" /><br />
+    <input name="lastName" placeholder="ENter Last Name" /><br />
+    <input name="GF No" placeholder="Enter your Gf No." /><br />
+    <input name="phone" placeholder="Enter your Gf No." /><br />
+    <input name="Address" placeholder="Enter your Address" />
+    <input name="Address" placeholder="Enter your Address" />
+
+    <script type="text/javascript">
+     
+      const allElements = document.querySelectorAll('input');
+      const allSelect = document.querySelectorAll('select');
+
+      allSelect.forEach((selects) =>
+        selects.addEventListener('change', handleSelect)
+      );
+
+      allElements.forEach((input) =>
+        input.addEventListener('keypress', handleInput)
+      );
+
+      function handleInput(e) {
+        console.log('OOOOOOOOOoooooo', e.target);
+        switch (e.target) {
+          case 'firstName':
+            break;
+
+          case 'lastName':
+            break;
+
+          default:
+            break;
+        }
+        console.log('**************', e.target.name, e.target.value);
+      }
+
+      function handleSelect(e) {}
+      //   const subsidemenu = document.getElementById('subsidemenuId');
+
+      //   function submenu() {
+      //     subsidemenu.style.transform = 'translateX(0)';
+      //   }
+
+      //   function backbtn() {
+      //     subsidemenu.style.transform = 'translateX(100%)';
+      //   }
+    </script>
+  </body>
+</html>
